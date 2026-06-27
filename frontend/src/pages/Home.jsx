@@ -8,6 +8,7 @@ import CTA from "../components/sections/CTA";
 import useDataStore from "../stores/useDataStore";
 
 export default function Home() {
+  console.log("API URL:", import.meta.env.VITE_API_URL);
   const { fetchAll } = useDataStore();
   useEffect(() => { fetchAll(); }, []);
   return <main className="overflow-x-hidden"><Hero /><Services /><Projects /><Technologies /><Reviews /><CTA /></main>;
