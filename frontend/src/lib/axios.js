@@ -5,10 +5,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: "https://software-solution-personal-website.onrender.com/api",
   withCredentials: true,
-  
 });
-console.log("API URL:", import.meta.env.VITE_API_URL);
 
 export default api;
